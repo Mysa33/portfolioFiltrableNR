@@ -1,0 +1,235 @@
+@charset "utf-8";
+/* CSS Portfolio */
+
+/*-------------------------------------------------------------------------------
+*										Classes globales
+*
+-------------------------------------------------------------------------------*/
+.conteneur {
+	width: 100%;
+	max-width:1200px;
+	min-width:460;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:80px;
+}
+
+.colonne {
+	display: block;
+	float:left;
+	vertical-align: top;
+	width: 20%;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+	min-width: auto;
+	background: none;
+	margin-bottom:10px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:10px;
+}
+.colonne ul{
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:0px;
+	padding-right:0px;
+	min-width: auto;
+	margin-bottom:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:0px;
+	border-radius:5px;
+}
+.colonne li{
+	border-radius:5px;
+}
+
+a{
+	/*text-decoration:none;*/
+}
+
+.blue, .blue a {
+  	color: #337ab7;
+ 
+}
+.white, .white a {
+  	color: #FFF;
+ 
+}
+
+/*-------------------------------------------------------------------------------
+*										Fin	Classes globales
+-------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------
+*										Navigation
+*
+-------------------------------------------------------------------------------*/
+
+.Rot {
+-moz-transition-duration:ease-in-out;
+-moz-transition-timing-function:ease-in-out;
+-webkit-transition-duration:2s;
+-webkit-transition-timing-function:ease-in-out;
+transition-duration:2s;
+transition-timing-function: ease-in-out;
+}
+
+.Rot :hover {
+-moz-transform:rotate(360deg);
+-webkit-transform:rotate(360deg);
+-ms-transform: rotate(360deg);
+-o-transform:  rotate(0deg);
+transform:rotate(360deg);
+}
+
+/*Rebond*/
+.rebond span{
+	margin-left:5px;
+}
+.rebond li{
+	display:inline;
+
+}
+
+.rebond li a {
+	display: inline-block;
+	max-height: 55px;
+	max-width: 150px;
+	min-width:auto;
+	text-align: center;
+	padding: 5px 5px;
+	margin: 5px 5px;
+	color: #FFF;
+	background: #FFF;
+	text-decoration: none;
+	line-height: 1.6em;
+	background: -moz-linear-gradient(center bottom , #349aff 11%, #80c0ff 56%) repeat scroll 0 0 #80c0ff;
+	background: -webkit-gradient(linear,left bottom,left top,color-stop(0.3, #349aff),color-stop(0.65, #80c0ff));
+	-moz-box-shadow: 0 0 65px #80c0ff inset, 0 0 20px #349aff inset, 0 0 3px #CCC;
+	-webkit-box-shadow: 0 0 65px #80c0ff inset, 0 0 20px #349aff inset, 0 0 3px #CCC;
+	box-shadow: 0 0 65px #80c0ff inset, 0 0 20px #349aff inset, 0 0 3px #CCC;
+	-moz-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+
+.rebond a {
+	position: relative;
+	top: 0;
+	box-shadow: 0 0 65px #80c0ff inset, 0 0 20px #349aff inset, 0 0 2px #CCC;
+	transition: all 0.3s ease-in;
+}
+
+.rebond a:before {
+	content: ' ';
+	position: absolute;
+	bottom: -1px; left: 0;
+	width: 100%;
+	height: 6px;
+	background: #9b885e;
+	box-shadow: 0 0 5px #9b885e,0 0 5px #9b885e,0 0 5px #9b885e;
+	border-radius: 90px/20px;
+	z-index: -1;
+	transition: all 0.3s ease-in;
+}
+/*Création de l’ombre*/
+
+.rebond a:before {
+	content: ' ';
+	position: absolute;
+	bottom: -1px; left: 0;
+	width: 100%;
+	height: 6px;
+	background: #9b885e;
+	box-shadow: 0 0 5px #9b885e,0 0 5px #9b885e,0 0 5px #9b885e;
+	border-radius: 90px/20px;
+	z-index: -1;
+	transition: all 0.3s ease-in;
+}
+/*L'effet de survol*/
+.rebond a:hover,
+.rebond a:focus {
+	top: -10px;
+}
+/*Décaler inversement l’ombre*/
+.rebond a:hover:before,
+.rebond a:focus:before {
+	bottom: -11px;
+	left: -3px;
+	width: 106%;
+	height: 4px;
+	background: #bcae8f;
+	box-shadow: 0 0 9px #bcae8f,0 0 9px #bcae8f,0 0 9px #bcae8f,0 0 9px #bcae8f,0 0 9px #bcae8f;
+}
+
+
+/*-------------------------------------------------------------------------------
+*										Fin	Navigation
+-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------
+*										Animations portfolio
+*
+-------------------------------------------------------------------------------*/
+.effet img{
+	padding-bottom:4px;
+	padding-left:4px;
+	padding-right:4px;
+	padding-top:4px;
+	margin-bottom:4px;
+	opacity:1;
+	border-radius:5px;
+}
+
+
+.effet li {
+	display: block;
+	width: 250px!important;
+	padding-bottom:4px;
+	padding-left:4px;
+	padding-right:4px;
+	padding-top:4px;
+	margin-bottom:4px;
+	box-shadow: 0 0 65px #47A3FF inset, 0 0 20px #47A3FF inset, 0 0 3px #47A3FF;
+}
+.effet figure {
+	position: relative;
+	display: inline-block;
+	width: 250px;
+	height: 175px;
+	margin: 0;
+	text-align: center;
+	overflow: hidden;
+}
+.effet figcaption {
+	position: absolute;
+	left: 5px; 
+	bottom: -1em;
+	width: 200px;
+	height: 2.6em;
+	line-height: 1.5em;
+	text-align: center;
+	color: #fff;
+	background: rgba(190,174,140,0.6);
+	overflow: hidden;
+	/*préparation de la transition*/
+	transition: all 0.7s;
+}
+.effet img:hover{opacity:0.2;}
+.effet figcaption span { display: block; }
+.effet figure:hover figcaption,
+.effet figure:focus figcaption {
+	height: 4.2em;
+	background: rgba(0,0,0,0.8);
+}
+
+
+/*-------------------------------------------------------------------------------
+*										Fin Animations portfolio
+-------------------------------------------------------------------------------*/
